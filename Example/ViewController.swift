@@ -8,7 +8,7 @@
 import UIKit
 import SBBannerView
 class ViewController: UIViewController {
-    let basicConfiguration = BasicConfiguration(backgroundColor: .blue, position: .top, duration: .temporary(forTimer: 3), message: "")
+    let basicConfiguration = BasicConfiguration(backgroundColor: .blue, position: .bottom, duration: .temporary(forTimer: 15), message: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()

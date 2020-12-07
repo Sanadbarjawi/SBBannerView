@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9032354257ED09000186B27 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9032353257ED09000186B27 /* Animator.swift */; };
+		C9032357257EE9E800186B27 /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9032356257EE9E800186B27 /* SwipeGesture.swift */; };
 		C9104826257EC5CF00FFE389 /* SBBannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E64F33257C545900FBC68F /* SBBannerView.framework */; };
 		C9104827257EC5CF00FFE389 /* SBBannerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E64F33257C545900FBC68F /* SBBannerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9535FCC257D382700E2D26E /* SlidableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		C9032353257ED09000186B27 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		C9032356257EE9E800186B27 /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidableViewProtocol.swift; sourceTree = "<group>"; };
 		C97F1168257CC52F0032A216 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		C9D76EC5257E380C0046752F /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				C9EE8512257D366A00B19B9A /* Protocols */,
 				C9D76ED8257E85DF0046752F /* Resources */,
 				C9032353257ED09000186B27 /* Animator.swift */,
+				C9032356257EE9E800186B27 /* SwipeGesture.swift */,
 			);
 			path = SBBannerView;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				C9EE8503257D350500B19B9A /* SBBannerManager.swift in Sources */,
 				C9EE84F9257D343900B19B9A /* BasicBanner.swift in Sources */,
 				C9EE8507257D362700B19B9A /* ConfigurableViewProtocol.swift in Sources */,
+				C9032357257EE9E800186B27 /* SwipeGesture.swift in Sources */,
 				C9D76EE6257E8AB70046752F /* BannerType.swift in Sources */,
 				C9EE84FF257D348100B19B9A /* CustomizedBanner.swift in Sources */,
 				C9535FCC257D382700E2D26E /* SlidableViewProtocol.swift in Sources */,

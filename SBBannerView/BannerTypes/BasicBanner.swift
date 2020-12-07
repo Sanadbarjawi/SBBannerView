@@ -7,8 +7,9 @@
 
 import UIKit
 
-
 public struct BasicBannerView: Bannerable, Slidable {
+
+    var gesture: SwipeGesture?
 
     let banner: UIView
 
@@ -19,8 +20,10 @@ public struct BasicBannerView: Bannerable, Slidable {
     public init(configuration: BasicConfiguration) {
         self.configuration = configuration
         self.banner = UIView()
+        self.gesture = SwipeGesture(on: self, configuration)
 
         applyConfiguration(configuration)
+        addSwipeGesture()
     }
 
     func applyConfiguration(_ configuration: ConfigurableView) {

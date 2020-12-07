@@ -9,6 +9,8 @@ import UIKit
 
 public struct CustomBannerView: Bannerable, Slidable {
 
+    var gesture: SwipeGesture?
+
     let banner: UIView
 
     let onWindow: UIWindow
