@@ -36,15 +36,50 @@ public struct BasicBannerView: Bannerable, Slidable {
         let initialYPosition = getInitialYPosition(configuration)
         let finalYPosition = getFinalYPosition(configuration)
 
+        let duration = configuration.duration
+        switch duration {
+        
+        case .temporary(forTimer: let time):
+            animateInTemporary(for: time, initialYPosition, finalYPosition)
+            
+        case .perminent:
+            animateInPermenent(initialYPosition, finalYPosition)
+        }
+    }
+
+    fileprivate func animateInPermenent(_ initialYPosition: CGFloat,
+                                        _ finalYPosition: CGFloat) {
+
         banner.frame.origin.y = initialYPosition
 
         UIView.animate(withDuration: 1,
                        delay: 0, usingSpringWithDamping: 0.8,
                        initialSpringVelocity: 1, options: [.curveEaseInOut], animations: {
 
-            banner.frame.origin.y = finalYPosition
+                        banner.frame.origin.y = finalYPosition
 
-        }, completion: nil)
+                       }, completion: nil)
+    }
+
+    fileprivate func animateInTemporary(for timeInterval: TimeInterval,
+                                        _ initialYPosition: CGFloat,
+                                        _ finalYPosition: CGFloat) {
+        
+        banner.frame.origin.y = initialYPosition
+        
+        UIView.animate(withDuration: 1,
+                       delay: 0, usingSpringWithDamping: 0.8,
+                       initialSpringVelocity: 1, options: [.curveEaseInOut], animations: {
+                        
+                        banner.frame.origin.y = finalYPosition
+                        
+                       }, completion: { finished in
+                        DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline: .now() + timeInterval) {
+                            DispatchQueue.main.async {
+                                slideOut()
+                            }
+                        }
+                       })
     }
 
     func slideOut() {

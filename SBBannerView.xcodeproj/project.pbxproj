@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9104826257EC5CF00FFE389 /* SBBannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E64F33257C545900FBC68F /* SBBannerView.framework */; };
+		C9104827257EC5CF00FFE389 /* SBBannerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9E64F33257C545900FBC68F /* SBBannerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9535FCC257D382700E2D26E /* SlidableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */; };
 		C97F1169257CC52F0032A216 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C97F1168257CC52F0032A216 /* Readme.md */; };
 		C9D76EC6257E380C0046752F /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D76EC5257E380C0046752F /* UIApplicationExtension.swift */; };
@@ -25,6 +27,30 @@
 		C9EE8503257D350500B19B9A /* SBBannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE8502257D350500B19B9A /* SBBannerManager.swift */; };
 		C9EE8507257D362700B19B9A /* ConfigurableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE8506257D362700B19B9A /* ConfigurableViewProtocol.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9104828257EC5CF00FFE389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E64F2A257C545900FBC68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E64F32257C545900FBC68F;
+			remoteInfo = SBBannerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C910482A257EC5CF00FFE389 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9104827257EC5CF00FFE389 /* SBBannerView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidableViewProtocol.swift; sourceTree = "<group>"; };
@@ -62,12 +88,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9104826257EC5CF00FFE389 /* SBBannerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9104825257EC5CF00FFE389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9D76ECD257E78C40046752F /* BannerConfigurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +128,7 @@
 				C9E64F35257C545900FBC68F /* SBBannerView */,
 				C9E64F8F257C5B0000FBC68F /* Example */,
 				C9E64F34257C545900FBC68F /* Products */,
+				C9104825257EC5CF00FFE389 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,10 +225,12 @@
 				C9E64F8A257C5B0000FBC68F /* Sources */,
 				C9E64F8B257C5B0000FBC68F /* Frameworks */,
 				C9E64F8C257C5B0000FBC68F /* Resources */,
+				C910482A257EC5CF00FFE389 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C9104829257EC5CF00FFE389 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -286,6 +323,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9104829257EC5CF00FFE389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E64F32257C545900FBC68F /* SBBannerView */;
+			targetProxy = C9104828257EC5CF00FFE389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9E64F96257C5B0000FBC68F /* Main.storyboard */ = {
