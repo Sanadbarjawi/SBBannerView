@@ -7,13 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9535FCC257D382700E2D26E /* SlidableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */; };
+		C97F1169257CC52F0032A216 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C97F1168257CC52F0032A216 /* Readme.md */; };
+		C9D76EC6257E380C0046752F /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D76EC5257E380C0046752F /* UIApplicationExtension.swift */; };
+		C9D76ECF257E78D70046752F /* BasicConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D76ECE257E78D70046752F /* BasicConfiguration.swift */; };
+		C9D76ED3257E78F30046752F /* CustomConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D76ED2257E78F30046752F /* CustomConfiguration.swift */; };
+		C9D76EE6257E8AB70046752F /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D76EE5257E8AB70046752F /* BannerType.swift */; };
 		C9E64F38257C545900FBC68F /* SBBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E64F36257C545900FBC68F /* SBBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9E64F40257C547100FBC68F /* BannarableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64F3F257C547100FBC68F /* BannarableViewProtocol.swift */; };
+		C9E64F91257C5B0000FBC68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64F90257C5B0000FBC68F /* AppDelegate.swift */; };
+		C9E64F95257C5B0000FBC68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E64F94257C5B0000FBC68F /* ViewController.swift */; };
+		C9E64F98257C5B0000FBC68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E64F96257C5B0000FBC68F /* Main.storyboard */; };
+		C9E64F9A257C5B0100FBC68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E64F99257C5B0100FBC68F /* Assets.xcassets */; };
+		C9E64F9D257C5B0100FBC68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E64F9B257C5B0100FBC68F /* LaunchScreen.storyboard */; };
+		C9EE84F9257D343900B19B9A /* BasicBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE84F8257D343900B19B9A /* BasicBanner.swift */; };
+		C9EE84FF257D348100B19B9A /* CustomizedBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE84FE257D348100B19B9A /* CustomizedBanner.swift */; };
+		C9EE8503257D350500B19B9A /* SBBannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE8502257D350500B19B9A /* SBBannerManager.swift */; };
+		C9EE8507257D362700B19B9A /* ConfigurableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EE8506257D362700B19B9A /* ConfigurableViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidableViewProtocol.swift; sourceTree = "<group>"; };
+		C97F1168257CC52F0032A216 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		C9D76EC5257E380C0046752F /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		C9D76ECE257E78D70046752F /* BasicConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicConfiguration.swift; sourceTree = "<group>"; };
+		C9D76ED2257E78F30046752F /* CustomConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConfiguration.swift; sourceTree = "<group>"; };
+		C9D76EE5257E8AB70046752F /* BannerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerType.swift; sourceTree = "<group>"; };
 		C9E64F33257C545900FBC68F /* SBBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E64F36257C545900FBC68F /* SBBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBannerView.h; sourceTree = "<group>"; };
 		C9E64F37257C545900FBC68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E64F3F257C547100FBC68F /* BannarableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannarableViewProtocol.swift; sourceTree = "<group>"; };
+		C9E64F8E257C5B0000FBC68F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E64F90257C5B0000FBC68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9E64F94257C5B0000FBC68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9E64F97257C5B0000FBC68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9E64F99257C5B0100FBC68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9E64F9C257C5B0100FBC68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9E64F9E257C5B0100FBC68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EE84F8257D343900B19B9A /* BasicBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBanner.swift; sourceTree = "<group>"; };
+		C9EE84FE257D348100B19B9A /* CustomizedBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedBanner.swift; sourceTree = "<group>"; };
+		C9EE8502257D350500B19B9A /* SBBannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBBannerManager.swift; sourceTree = "<group>"; };
+		C9EE8506257D362700B19B9A /* ConfigurableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,13 +58,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9E64F8B257C5B0000FBC68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9D76ECD257E78C40046752F /* BannerConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				C9D76ECE257E78D70046752F /* BasicConfiguration.swift */,
+				C9D76ED2257E78F30046752F /* CustomConfiguration.swift */,
+			);
+			path = BannerConfigurations;
+			sourceTree = "<group>";
+		};
+		C9D76ED8257E85DF0046752F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64F36257C545900FBC68F /* SBBannerView.h */,
+				C9E64F37257C545900FBC68F /* Info.plist */,
+				C97F1168257CC52F0032A216 /* Readme.md */,
+				C9D76EC5257E380C0046752F /* UIApplicationExtension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C9E64F29257C545900FBC68F = {
 			isa = PBXGroup;
 			children = (
 				C9E64F35257C545900FBC68F /* SBBannerView */,
+				C9E64F8F257C5B0000FBC68F /* Example */,
 				C9E64F34257C545900FBC68F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C9E64F33257C545900FBC68F /* SBBannerView.framework */,
+				C9E64F8E257C5B0000FBC68F /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +109,46 @@
 		C9E64F35257C545900FBC68F /* SBBannerView */ = {
 			isa = PBXGroup;
 			children = (
-				C9E64F36257C545900FBC68F /* SBBannerView.h */,
-				C9E64F37257C545900FBC68F /* Info.plist */,
+				C9EE8502257D350500B19B9A /* SBBannerManager.swift */,
+				C9EE84F7257D342A00B19B9A /* BannerTypes */,
+				C9D76ECD257E78C40046752F /* BannerConfigurations */,
+				C9EE8512257D366A00B19B9A /* Protocols */,
+				C9D76ED8257E85DF0046752F /* Resources */,
 			);
 			path = SBBannerView;
+			sourceTree = "<group>";
+		};
+		C9E64F8F257C5B0000FBC68F /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64F90257C5B0000FBC68F /* AppDelegate.swift */,
+				C9E64F94257C5B0000FBC68F /* ViewController.swift */,
+				C9E64F96257C5B0000FBC68F /* Main.storyboard */,
+				C9E64F99257C5B0100FBC68F /* Assets.xcassets */,
+				C9E64F9B257C5B0100FBC68F /* LaunchScreen.storyboard */,
+				C9E64F9E257C5B0100FBC68F /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		C9EE84F7257D342A00B19B9A /* BannerTypes */ = {
+			isa = PBXGroup;
+			children = (
+				C9D76EE5257E8AB70046752F /* BannerType.swift */,
+				C9EE84F8257D343900B19B9A /* BasicBanner.swift */,
+				C9EE84FE257D348100B19B9A /* CustomizedBanner.swift */,
+			);
+			path = BannerTypes;
+			sourceTree = "<group>";
+		};
+		C9EE8512257D366A00B19B9A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C9E64F3F257C547100FBC68F /* BannarableViewProtocol.swift */,
+				C9EE8506257D362700B19B9A /* ConfigurableViewProtocol.swift */,
+				C9535FCB257D382700E2D26E /* SlidableViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,15 +183,37 @@
 			productReference = C9E64F33257C545900FBC68F /* SBBannerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C9E64F8D257C5B0000FBC68F /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9E64F9F257C5B0100FBC68F /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				C9E64F8A257C5B0000FBC68F /* Sources */,
+				C9E64F8B257C5B0000FBC68F /* Frameworks */,
+				C9E64F8C257C5B0000FBC68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = C9E64F8E257C5B0000FBC68F /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C9E64F2A257C545900FBC68F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					C9E64F32257C545900FBC68F = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					C9E64F8D257C5B0000FBC68F = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -111,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				C9E64F32257C545900FBC68F /* SBBannerView */,
+				C9E64F8D257C5B0000FBC68F /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +242,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97F1169257CC52F0032A216 /* Readme.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E64F8C257C5B0000FBC68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E64F9D257C5B0100FBC68F /* LaunchScreen.storyboard in Resources */,
+				C9E64F9A257C5B0100FBC68F /* Assets.xcassets in Resources */,
+				C9E64F98257C5B0000FBC68F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +263,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EE8503257D350500B19B9A /* SBBannerManager.swift in Sources */,
+				C9EE84F9257D343900B19B9A /* BasicBanner.swift in Sources */,
+				C9EE8507257D362700B19B9A /* ConfigurableViewProtocol.swift in Sources */,
+				C9D76EE6257E8AB70046752F /* BannerType.swift in Sources */,
+				C9EE84FF257D348100B19B9A /* CustomizedBanner.swift in Sources */,
+				C9535FCC257D382700E2D26E /* SlidableViewProtocol.swift in Sources */,
+				C9D76ECF257E78D70046752F /* BasicConfiguration.swift in Sources */,
+				C9D76EC6257E380C0046752F /* UIApplicationExtension.swift in Sources */,
+				C9D76ED3257E78F30046752F /* CustomConfiguration.swift in Sources */,
+				C9E64F40257C547100FBC68F /* BannarableViewProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E64F8A257C5B0000FBC68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E64F95257C5B0000FBC68F /* ViewController.swift in Sources */,
+				C9E64F91257C5B0000FBC68F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9E64F96257C5B0000FBC68F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E64F97257C5B0000FBC68F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9E64F9B257C5B0100FBC68F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9E64F9C257C5B0100FBC68F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9E64F39257C545900FBC68F /* Debug */ = {
@@ -261,14 +432,16 @@
 		C9E64F3C257C545900FBC68F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BDZ9JJAWHH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SBBannerView/Info.plist;
+				INFOPLIST_FILE = SBBannerView/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,22 +450,26 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SanadBarjawi.SBBannerView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C9E64F3D257C545900FBC68F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BDZ9JJAWHH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SBBannerView/Info.plist;
+				INFOPLIST_FILE = SBBannerView/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +478,45 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SanadBarjawi.SBBannerView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C9E64FA0257C5B0100FBC68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDZ9JJAWHH;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SanadBarjawi.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9E64FA1257C5B0100FBC68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDZ9JJAWHH;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SanadBarjawi.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +539,15 @@
 			buildConfigurations = (
 				C9E64F3C257C545900FBC68F /* Debug */,
 				C9E64F3D257C545900FBC68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9E64F9F257C5B0100FBC68F /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E64FA0257C5B0100FBC68F /* Debug */,
+				C9E64FA1257C5B0100FBC68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
