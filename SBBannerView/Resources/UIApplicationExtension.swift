@@ -28,3 +28,26 @@ extension UIApplication {
         return keyWindow
     }
 }
+
+extension UIWindow {
+    /**
+     if let tabbarController = onWindow.rootViewController as? UITabBarController,
+        tabbarController.tabBar.isHidden == false,
+        tabbarController.tabBar.layer.zPosition == 0 {
+
+         tabbarHeight = tabbarController.tabBar.bounds.size.height
+         return UIScreen.main.bounds.height
+             - (tabbarHeight + configuration.height + topBottomExtraPadding)
+     }
+     */
+    func isTabbarShowing() -> Bool {
+        let tabbarController = (self.rootViewController as? UITabBarController)
+        return tabbarController?.tabBar.isHidden == false && tabbarController?.tabBar.layer.zPosition == 0
+    }
+
+    func getTabbarHeight() -> CGFloat {
+        guard isTabbarShowing() == true else { return 0.0 }
+        let tabbarController = (self.rootViewController as? UITabBarController)
+        return tabbarController?.tabBar.bounds.height ?? 0.0
+    }
+}

@@ -16,15 +16,21 @@ protocol Slidable {
 extension Slidable {
 
     func getFinalYPosition(_ configuration: ConfigurableView) -> CGFloat {
-
+        let topBottomExtraPadding: CGFloat = 8.0 //
         switch configuration.position {
 
-            case .top: return onWindow.safeAreaInsets.top
+        case .top: return onWindow.safeAreaInsets.top
 
-            case .bottom:
+        case .bottom:
+            if onWindow.isTabbarShowing() {
                 return UIScreen.main.bounds.height
-                    - (onWindow.safeAreaInsets.bottom + configuration.height)
+                    - (onWindow.getTabbarHeight() + configuration.height + topBottomExtraPadding)
+            } else {
+                return UIScreen.main.bounds.height
+                    - (onWindow.safeAreaInsets.bottom + configuration.height + topBottomExtraPadding)
             }
+
+        }
     }
 
     func getInitialYPosition(_ configuration: ConfigurableView) -> CGFloat {
