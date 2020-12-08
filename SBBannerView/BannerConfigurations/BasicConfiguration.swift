@@ -8,10 +8,19 @@
 import UIKit
 
 public struct BasicConfiguration: ConfigurableView {
+
+    public let width: CGFloat = UIScreen.main.bounds.width - 25
+
+    public let cornerRadius: CGFloat = 8.0
+
     public let duration: Duration
+
     public let backgroundColor: UIColor
+
     public let position: Position
+
     public let message: String
+
     public let height: CGFloat = 50.0
 
     public init(backgroundColor: UIColor,

@@ -9,6 +9,11 @@ import UIKit
 
 public struct CustomBannerView: Bannerable, Slidable {
 
+    func slideOut() {
+
+    }
+
+
     var gesture: SwipeGesture?
 
     let banner: UIView
@@ -29,10 +34,6 @@ public struct CustomBannerView: Bannerable, Slidable {
 
     func slideIn() {
 
-    }
-
-    func slideOut() {
-        
     }
 
 

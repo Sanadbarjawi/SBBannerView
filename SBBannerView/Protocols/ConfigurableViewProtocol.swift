@@ -13,6 +13,8 @@ public protocol ConfigurableView {
     var duration: Duration { get }
     var message: String { get }
     var height: CGFloat { get }
+    var width: CGFloat { get }
+    var cornerRadius: CGFloat { get }
 }
 
 public enum Position { case

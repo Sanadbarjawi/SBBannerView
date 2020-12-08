@@ -30,8 +30,10 @@ public struct BasicBannerView: Bannerable, Slidable {
         if let configuration = configuration as? BasicConfiguration {
             banner.backgroundColor = configuration.backgroundColor
             banner.frame = CGRect(x: 0, y: 0,
-                                  width: UIScreen.main.bounds.width,
+                                  width: configuration.width,
                                   height: configuration.height)
+            banner.layer.cornerRadius = configuration.cornerRadius
+            banner.center = onWindow.center
         }
     }
 

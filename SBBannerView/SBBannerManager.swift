@@ -11,34 +11,26 @@ public class SBBannerManager {
 
     public static let shared: SBBannerManager = SBBannerManager()
 
-    private var bannerView: Slidable?
+    var currentBanner: Slidable?
 
     private init() {}
 
     public func slideIn(_ type: BannerViewType) {
 
-        if bannerView != nil {
-            slideOut()
-        }
-
         switch type {
 
         case .basic(let configuration):
+            currentBanner = BasicBannerView(configuration: configuration)
 
-            bannerView = BasicBannerView(configuration: configuration)
-
-        case .customized(configuration: let configuration):
-
-            bannerView = CustomBannerView(configuration: configuration)
+        case .customized(configuration: _): break
         }
-        bannerView?.slideIn()
+
+        currentBanner?.slideIn()
 
     }
 
     public func slideOut() {
-
-        bannerView?.slideOut()
-        bannerView = nil
+        currentBanner?.slideOut()
     }
 
 }

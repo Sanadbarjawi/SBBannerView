@@ -66,7 +66,9 @@ struct Animator: Animatable {
 
                         banner.frame.origin.y = initialYPosition
 
-                       }, completion: nil)
+                       }, completion: { finished in
+                        banner.removeFromSuperview()
+                       })
     }
 
 

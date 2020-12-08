@@ -8,22 +8,29 @@
 import UIKit
 
 public struct CustomConfiguration: ConfigurableView {
+
+    public var width: CGFloat
+    
+    public var cornerRadius: CGFloat
+    
     public let backgroundColor: UIColor
+
     public let height: CGFloat
-    public let conrnerRadius: CGFloat
-    public let leftRightPadding: Double
+
     public let position: Position
+
     public let duration: Duration
+
     public let message: String
 
-    public init(backgroundColor: UIColor, height: CGFloat, conrnerRadius: CGFloat, leftRightPadding: Double, position: Position, duration: Duration, message: String) {
+    public init(backgroundColor: UIColor, height: CGFloat, cornerRadius: CGFloat, position: Position, duration: Duration, message: String, width: CGFloat) {
         self.backgroundColor = backgroundColor
         self.height = height
-        self.conrnerRadius = conrnerRadius
-        self.leftRightPadding = leftRightPadding
+        self.cornerRadius = cornerRadius
         self.position = position
         self.duration = duration
         self.message = message
+        self.width = width
     }
 
 }
