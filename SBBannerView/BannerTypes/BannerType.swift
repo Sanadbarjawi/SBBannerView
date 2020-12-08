@@ -8,6 +8,5 @@
 import Foundation
 
 public enum BannerViewType { case
-    basic(configuration: BasicConfiguration),
-    customized(configuration: CustomConfiguration)
+    basic(configuration: BannerConfiguration)
 }

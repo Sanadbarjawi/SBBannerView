@@ -7,17 +7,17 @@
 
 import UIKit
 
-public struct BasicBannerView: Bannerable, Slidable {
+public struct BannerView: Bannerable, Slidable {
 
     var gesture: SwipeGesture?
 
     let banner: UIView
 
-    let configuration: BasicConfiguration
+    let configuration: BannerConfiguration
 
     let onWindow: UIWindow = UIApplication.shared.getKeyWindow()!
 
-    public init(configuration: BasicConfiguration) {
+    public init(configuration: BannerConfiguration) {
         self.configuration = configuration
         self.banner = UIView()
         self.gesture = SwipeGesture(on: self, configuration)
@@ -27,7 +27,7 @@ public struct BasicBannerView: Bannerable, Slidable {
     }
 
     func applyConfiguration(_ configuration: ConfigurableView) {
-        if let configuration = configuration as? BasicConfiguration {
+        if let configuration = configuration as? BannerConfiguration {
             banner.backgroundColor = configuration.backgroundColor
             banner.frame = CGRect(x: 0, y: 0,
                                   width: configuration.width,
@@ -37,8 +37,37 @@ public struct BasicBannerView: Bannerable, Slidable {
         }
     }
 
-    func slideIn() {
+    fileprivate func configureBanner() {
+        let titleLabel = UILabel()
+        titleLabel.numberOfLines = 1
+        titleLabel.text = configuration.message
+        titleLabel.textColor = configuration.textColor
+        titleLabel.font = configuration.textFont
+        titleLabel.textAlignment = configuration.textAlignment
+
+        let sv = UIStackView(arrangedSubviews: [titleLabel])
+        sv.axis = .horizontal
+        sv.translatesAutoresizingMaskIntoConstraints = false
+        banner.addSubview(sv)
+
+        sv.topAnchor.constraint(
+            equalTo: banner.topAnchor, constant: 8
+        ).isActive = true
+        sv.bottomAnchor.constraint(
+            equalTo: banner.bottomAnchor, constant: -8
+        ).isActive = true
+        sv.leftAnchor.constraint(
+            equalTo: banner.leftAnchor, constant: 8
+        ).isActive = true
+        sv.rightAnchor.constraint(
+            equalTo: banner.rightAnchor, constant: -8
+        ).isActive = true
+
         onWindow.addSubview(banner)
+    }
+
+    func slideIn() {
+        configureBanner()
 
         let initialYPosition = getInitialYPosition(configuration)
         let finalYPosition = getFinalYPosition(configuration)

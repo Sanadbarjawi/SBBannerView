@@ -20,9 +20,7 @@ public class SBBannerManager {
         switch type {
 
         case .basic(let configuration):
-            currentBanner = BasicBannerView(configuration: configuration)
-
-        case .customized(configuration: _): break
+            currentBanner = BannerView(configuration: configuration)
         }
 
         currentBanner?.slideIn()
