@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     let basicConfiguration = BannerConfiguration(
         backgroundColor: .lightGray,
-        position: .bottom,
+        position: .top,
         duration: .temporary(forTimer: 2),
         message: "no internet connection",
         cornerRadius: 3, width: UIScreen.main.bounds.width - 20,

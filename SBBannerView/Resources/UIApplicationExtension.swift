@@ -48,7 +48,7 @@ extension UIWindow {
             return navbarController?.navigationBar.isHidden == false && navbarController?.navigationBar.layer.zPosition == 0
 
         } else {
-            let navbarController = (self.rootViewController)?.navigationController
+            let navbarController = (self.rootViewController) as? UINavigationController
             return navbarController?.navigationBar.isHidden == false && navbarController?.navigationBar.layer.zPosition == 0
         }
 
