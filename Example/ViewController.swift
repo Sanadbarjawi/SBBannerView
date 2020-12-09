@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func showBanner(_ send: UIButton) {
 
-        SBBannerManager.shared.slideIn(.basic(configuration: basicConfiguration))
+        SBBannerManager.shared.slideIn(.basic(configuration: basicConfiguration), shouldSlideoutPreviousBannerIfFound: true)
 
     }
 

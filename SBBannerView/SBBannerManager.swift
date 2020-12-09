@@ -15,8 +15,10 @@ public class SBBannerManager {
 
     private init() {}
 
-    public func slideIn(_ type: BannerViewType) {
-
+    public func slideIn(_ type: BannerViewType, shouldSlideoutPreviousBannerIfFound: Bool) {
+        if shouldSlideoutPreviousBannerIfFound {
+            currentBanner?.slideOut()
+        }
         switch type {
 
         case .basic(let configuration):
