@@ -19,7 +19,13 @@ extension Slidable {
         let topBottomExtraPadding: CGFloat = 8.0 //
         switch configuration.position {
 
-        case .top: return onWindow.safeAreaInsets.top
+        case .top:
+
+            if onWindow.isNavBarShowing() {
+                return onWindow.getNavbarHeight() + topBottomExtraPadding + onWindow.safeAreaInsets.top
+            } else {
+                return onWindow.safeAreaInsets.top
+            }
 
         case .bottom:
             if onWindow.isTabbarShowing() {

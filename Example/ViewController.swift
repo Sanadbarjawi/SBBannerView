@@ -20,20 +20,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-    }
-
-    @IBAction func testTap(_ send: UIButton) {
+    @IBAction func showBanner(_ send: UIButton) {
 
         SBBannerManager.shared.slideIn(.basic(configuration: basicConfiguration))
 
     }
 
 }
-

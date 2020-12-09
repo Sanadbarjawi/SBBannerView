@@ -30,16 +30,7 @@ extension UIApplication {
 }
 
 extension UIWindow {
-    /**
-     if let tabbarController = onWindow.rootViewController as? UITabBarController,
-        tabbarController.tabBar.isHidden == false,
-        tabbarController.tabBar.layer.zPosition == 0 {
 
-         tabbarHeight = tabbarController.tabBar.bounds.size.height
-         return UIScreen.main.bounds.height
-             - (tabbarHeight + configuration.height + topBottomExtraPadding)
-     }
-     */
     func isTabbarShowing() -> Bool {
         let tabbarController = (self.rootViewController as? UITabBarController)
         return tabbarController?.tabBar.isHidden == false && tabbarController?.tabBar.layer.zPosition == 0
@@ -49,5 +40,30 @@ extension UIWindow {
         guard isTabbarShowing() == true else { return 0.0 }
         let tabbarController = (self.rootViewController as? UITabBarController)
         return tabbarController?.tabBar.bounds.height ?? 0.0
+    }
+
+    func isNavBarShowing() -> Bool {
+        if isTabbarShowing() {
+           let navbarController = ((self.rootViewController as? UITabBarController)?.selectedViewController) as? UINavigationController
+            return navbarController?.navigationBar.isHidden == false && navbarController?.navigationBar.layer.zPosition == 0
+
+        } else {
+            let navbarController = (self.rootViewController)?.navigationController
+            return navbarController?.navigationBar.isHidden == false && navbarController?.navigationBar.layer.zPosition == 0
+        }
+
+    }
+
+    func getNavbarHeight() -> CGFloat {
+        guard isNavBarShowing() == true else { return 0.0 }
+
+        if isTabbarShowing() {
+            let navbarController = ((self.rootViewController as? UITabBarController)?.selectedViewController) as? UINavigationController
+            return navbarController?.navigationBar.bounds.height ?? 0.0
+        } else {
+            let navbarController = (self.rootViewController as? UINavigationController)
+            return navbarController?.navigationBar.bounds.height ?? 0.0
+        }
+
     }
 }
