@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SBBannerView"
-  spec.version      = "V1.0.0"
+  spec.version      = "1.0.0"
   spec.summary      = "A handy fully customised banner"
 
   spec.description  = "A handy fully customised banner that could be used to as an internet connection indicator, notifications alerts, success messages and so much more!"
