@@ -1,18 +1,44 @@
+# SBBannerView
 
-- Functional Requerments For the SBBannerView:
+A handy fully customised banner
 
-1- banner source is either:
-fromTop, fromBottom
+## Description
 
-2- banner should be cornered from all corners with the value of 12
+A handy fully customised banner that could be used to as an internet connection indicator, notifications alerts, success messages and so much more!
 
-3- banner should be respecting safe area's (bottom, top)
+## Getting Started
 
-5- banner should be either: 
-- perminent, - temparoray 
+### Dependencies
 
--------------------------------------------------------------------------------------
+* supporting iOS, with the minimum deployement target of "11.0"
 
-- Technical Rules For the SBBannerView:
-1- programmatically, 2- supporting iOS 12 >
-3- cocoapod support 
+### Installing
+* using Cocoapods: pod 'SBBannerView', :git => 'https://github.com/Sanadbarjawi/SBBannerView.git', :tag => '1.0.0'
+
+### Executing program
+
+* How to run the program
+
+* simply import SBBannerView in your desired file
+* and use the singleton #SBBannerManager# as the below
+
+```
+SBBannerManager.shared.slideIn(_ type: BannerViewType, shouldSlideoutPreviousBannerIfFound: Bool)
+SBBannerManager.shared.slideOut()
+```
+
+## Authors
+
+Contributors names and contact info
+
+ex. Sanad Barjawi
+ex. [@MAF](https://www.majidalfuttaim.com/en)
+
+## Version History
+
+* 1.0.0
+    * Initial Release
+
+## License
+
+This project is licensed under the [MIT] License 
