@@ -13,8 +13,10 @@ A handy fully customised banner that could be used to as an internet connection 
 * supporting iOS, with the minimum deployement target of "11.0"
 
 ### Installing
-* using Cocoapods: pod 'SBBannerView', :git => 'https://github.com/Sanadbarjawi/SBBannerView.git', :tag => '1.0.0'
-
+* using Cocoapods: 
+```
+pod 'SBBannerView', :git => 'https://github.com/Sanadbarjawi/SBBannerView.git', :tag => 'v1.0.0'
+```
 ### Executing program
 
 * How to run the program
