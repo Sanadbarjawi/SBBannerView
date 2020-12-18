@@ -24,6 +24,7 @@ A handy fully customised banner that could be used to as an internet connection 
 
 * NavigationBar
 
+
 ### Position(Top, Bottom)
 
 ```.top``` <img src="/Readme-Assets/positions/fromTop.gif" width="300"/>  ```.bottom``` <img src="/Readme-Assets/positions/bottom.gif" width="300"/>
@@ -52,16 +53,30 @@ pod 'SBBannerView', :git => 'https://github.com/Sanadbarjawi/SBBannerView.git', 
 * and use the singleton #SBBannerManager# as the below
 
 ```
-SBBannerManager.shared.slideIn(_ type: BannerViewType, shouldSlideoutPreviousBannerIfFound: Bool)
+// setup your configuration: 
+
+let configuration = BannerConfiguration(backgroundColor: <UIColor>,
+                                            position: <Position>,
+                                            duration: <Duration>,
+                                            message: <String>,
+                                            textFont: <UIFont>,
+                                            textColor: <UIColor>)
+        
+// Pass the *configuration* to the banner type:  
+
+
+SBBannerManager.shared.slideIn(_ type: .basic(configuration: configuration), shouldSlideoutPreviousBannerIfFound: Bool)
+
+// to slide out the banner:
 SBBannerManager.shared.slideOut()
+
 ```
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Sanad Barjawi
-ex. [@MAF](https://www.majidalfuttaim.com/en)
+Sanad Barjawi
 
 ## Version History
 
@@ -70,4 +85,4 @@ ex. [@MAF](https://www.majidalfuttaim.com/en)
 
 ## License
 
-This project is licensed under the [MIT] License 
+This project is licensed under the MIT License 
