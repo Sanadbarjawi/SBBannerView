@@ -24,12 +24,12 @@ A handy fully customised banner that could be used to as an internet connection 
 
 ### Position(Top, Bottom)
 
-```.top``` <img src="/Readme-Assets/positions/fromTop.gif" width="300"/>  ```.bottom``` <img src="/Readme-Assets/positions/bottom.gif" width="300"/>
+```.top``` <img src="https://github.com/Sanadbarjawi/SBBannerView/tree/main/Readme-Assets/positions/fromTop.gif" width="300"/>  ```.bottom``` <img src="https://github.com/Sanadbarjawi/SBBannerView/tree/main/Readme-Assets/positions/bottom.gif" width="300"/>
 
 
 ### Duration (Perminent, Temporary)
 
-```.perminent``` <img src="/Readme-Assets/duration/perm.gif" width="300"/>  ```.temporary(forTimer:_)``` <img src="/Readme-Assets/duration/temp.gif" width="300"/>
+```.perminent``` <img src="https://github.com/Sanadbarjawi/SBBannerView/tree/main/Readme-Assets/duration/perm.gif" width="300"/>  ```.temporary(forTimer:_)``` <img src="https://github.com/Sanadbarjawi/SBBannerView/tree/main/Readme-Assets/duration/temp.gif" width="300"/>
 
 ## Getting Started
 
