@@ -1,12 +1,9 @@
 # SBBannerView
 
-A handy fully customised banner
+A handy fully customised banner that could be used to as an internet connection indicator, notifications alerts, success messages and so much more! a one liner easy to use banner, just provide your values and let it do its work 🧙🏻‍♀️
 
 ## Description
 ### Fully Customizable (Font, Width, Height, fontColor and many more!)
-A handy fully customised banner that could be used to as an internet connection indicator, notifications alerts, success messages and so much more! a one liner easy to use banner, just provide your values and let it do its work 🧙🏻‍♀️
-
-
 
 
 ## Features
