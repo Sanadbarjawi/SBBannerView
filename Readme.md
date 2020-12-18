@@ -77,8 +77,8 @@ Sanad Barjawi
 
 ## Version History
 
+* 1.0.1
 * 1.0.0
-    * Initial Release
 
 ## License
 
