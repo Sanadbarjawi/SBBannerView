@@ -1,15 +1,17 @@
 # SBBannerView
 
-A handy fully customised banner that could be used to as an internet connection indicator, notifications alerts, success messages and so much more! a one liner easy to use banner, just provide your values and let it do its work 🧙🏻‍♀️
+A fully customisable banner for your iOS(iPhone,iPad) projects
 
 ## Description
-### Fully Customizable (Font, Width, Height, fontColor and many more!)
+
+### SBBannerView could be used as your internet connection indicator, notification alerts, success messages and so much more 🧙🏻‍♀️
 
 
 ## Features
 
+* Easy Customizable (duration, position, cornerRadius, Font, Width, Height, fontColor, textAlignment) 
 
-* SBBannerView can overlap the previous banner or dismiss the current one before animating in the new banner
+* Can overlap the previous banner or dismiss the current one before animating in the new banner
 
 * SBBannerView is by default swipable; can be dismissed using swipe gestures
 
@@ -38,10 +40,13 @@ A handy fully customised banner that could be used to as an internet connection 
 * supporting iOS, with the minimum deployement target of "11.0"
 
 ### Installing
+
 * using Cocoapods: 
+
 ```
-pod 'SBBannerView', :git => 'https://github.com/Sanadbarjawi/SBBannerView.git', :tag => 'v1.0.1'
+pod 'SBBannerView', :git => 'https://github.com/Sanadbarjawi/SBBannerView.git', :tag => 'v1.0.2'
 ```
+
 ### Executing program
 
 * How to run the program
@@ -77,6 +82,7 @@ Sanad Barjawi
 
 ## Version History
 
+* 1.0.2 iPad support 
 * 1.0.1
 * 1.0.0
 
