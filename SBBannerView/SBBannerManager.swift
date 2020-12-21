@@ -7,30 +7,30 @@
 
 import UIKit
 
-public class SBBannerManager {
+public final class SBBannerManager {
 
     public static let shared: SBBannerManager = SBBannerManager()
 
-    var currentBanner: Slidable?
+    private var banners: [Slidable] = [Slidable]()
 
     private init() {}
 
     public func slideIn(_ type: BannerViewType, shouldSlideoutPreviousBannerIfFound: Bool) {
         if shouldSlideoutPreviousBannerIfFound {
-            currentBanner?.slideOut()
+            banners.forEach{$0.slideOut()}
         }
         switch type {
 
         case .basic(let configuration):
-            currentBanner = BannerView(configuration: configuration)
+            banners.append(BannerView(configuration: configuration))
         }
+        banners.last?.slideIn()
 
-        currentBanner?.slideIn()
 
     }
 
     public func slideOut() {
-        currentBanner?.slideOut()
+        banners.last?.slideOut()
     }
 
 }
