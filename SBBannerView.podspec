@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/Sanadbarjawi/SBBannerView.git", :tag => "v1.0.1" }
  
-  spec.vendored_framework = "SBBannerView.xcframework"
+  spec.vendored_framework = "builds/SBBannerView.xcframework"
 
 end
