@@ -1,0 +1,57 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SBBannerView
+import Foundation
+@_exported import SBBannerView
+import Swift
+import UIKit
+@_hasMissingDesignatedInitializers final public class SBBannerManager {
+  public static let shared: SBBannerView.SBBannerManager
+  final public func slideIn(_ type: SBBannerView.BannerViewType, shouldSlideoutPreviousBannerIfFound: Swift.Bool)
+  final public func slideOut()
+  @objc deinit
+}
+public struct BannerView {
+  public init(configuration: SBBannerView.BannerConfiguration)
+}
+public protocol ConfigurableView {
+  var backgroundColor: UIKit.UIColor { get }
+  var position: SBBannerView.Position { get }
+  var duration: SBBannerView.Duration { get }
+  var message: Swift.String { get }
+  var height: CoreGraphics.CGFloat { get }
+  var width: CoreGraphics.CGFloat { get }
+  var cornerRadius: CoreGraphics.CGFloat { get }
+  var textAlignment: UIKit.NSTextAlignment { get }
+  var textColor: UIKit.UIColor { get }
+  var textFont: UIKit.UIFont { get }
+}
+public enum Position {
+  case top, bottom
+  public static func == (a: SBBannerView.Position, b: SBBannerView.Position) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum Duration {
+  case perminent, temporary(forTimer: Foundation.TimeInterval)
+}
+public enum BannerViewType {
+  case basic(configuration: SBBannerView.BannerConfiguration)
+}
+public struct BannerConfiguration : SBBannerView.ConfigurableView {
+  public let textAlignment: UIKit.NSTextAlignment
+  public let textColor: UIKit.UIColor
+  public let textFont: UIKit.UIFont
+  public let width: CoreGraphics.CGFloat
+  public let cornerRadius: CoreGraphics.CGFloat
+  public let duration: SBBannerView.Duration
+  public let backgroundColor: UIKit.UIColor
+  public let position: SBBannerView.Position
+  public let message: Swift.String
+  public let height: CoreGraphics.CGFloat
+  public init(backgroundColor: UIKit.UIColor, position: SBBannerView.Position, duration: SBBannerView.Duration, message: Swift.String, cornerRadius: CoreGraphics.CGFloat? = nil, width: CoreGraphics.CGFloat? = nil, textFont: UIKit.UIFont, textColor: UIKit.UIColor, height: CoreGraphics.CGFloat? = nil, textAlignment: UIKit.NSTextAlignment? = nil)
+}
+extension SBBannerView.Position : Swift.Equatable {}
+extension SBBannerView.Position : Swift.Hashable {}
